@@ -20,7 +20,6 @@ html-css-js-replica-readme/
 ├── imagens/       # Recursos visuais
 ├── index.html     # Página principal
 ├── style.css      # Estilos
-└── script.js      # Função de copiar
 ```
 
 ---
