@@ -1,0 +1,144 @@
+/* Reset geral */
+body {
+    margin: 0;
+    background: #000;
+    color: #f0f6fc;
+    ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: #f0f6fc;
+    text-align: left;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* Card principal */
+main {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 6px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    overflow: hidden;
+    /* recorta GIFs/HRs nos cantos */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+}
+
+/* Linhas de separação */
+.linha-maior {
+    height: 3px;
+    background: #3d444d;
+    border: none;
+    margin: 24px 0;
+}
+
+.linha-menor {
+    height: 1px;
+    background: gray;
+    border: none;
+}
+
+/* Títulos */
+h2 {
+    margin: 24px 0px 16px;
+    font-size: 24px;
+    padding: 0px 0px 7.2px;
+    color: #f0f6fc;
+}
+
+/* Container do bloco de código */
+.code-container {
+    position: relative;
+}
+
+/* Botão copiar */
+.copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    background: #444;
+    color: #f0f6fc;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background: #666;
+}
+
+.Pac‑Man {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* evita espacinho de linha */
+}
+
+.creditos {
+    text-align: center;
+    font-size: 12px;
+}
+
+.link {
+    text-decoration: underline;
+    /* sublinhar o link */
+    text-underline-offset: 3px;
+    /* distância do sublinhado ao texto */
+    text-decoration-thickness: 2px;
+    /* espessura da linha */
+    text-decoration-color: #4493f8;
+    /* cor da linha (opcional) */
+    color: #4493f8;
+}
+
+.link:hover {
+    opacity: .9;
+    /* feedback no hover */
+}
+
+.label-readme {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #f0f6fc;
+    /* cor do texto */
+}
+
+/* “pinta” o PNG com a cor desejada */
+.icon-livro {
+    width: 16px;
+    height: 16px;
+    background-color: #f0f6fc;
+    /* cor do ícone */
+    display: inline-block;
+    -webkit-mask: url('imagens/livro.png') no-repeat center / contain;
+    mask: url('imagens/livro.png') no-repeat center / contain;
+}
+
+.badges a {
+    text-decoration: none;
+}
+
+.badges img {
+    display: block;
+}
+
+.badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
