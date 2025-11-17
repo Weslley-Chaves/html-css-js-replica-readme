@@ -142,3 +142,9 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
 }
+
+.container__stacks {
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}

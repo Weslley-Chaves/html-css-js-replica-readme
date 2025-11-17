@@ -1,0 +1,124 @@
+/* ==========================================================================
+   RESET / NORMALIZE MODERNO — focado em previsibilidade + acessibilidade
+   Autor: Weslley (revisto)
+   Uso: importar ANTES do style.css principal
+   ========================================================================== */
+
+/* 1) Modelo de caixa previsível em TUDO (inclui pseudo-elementos) */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2) Zera margens/paddings padrões que atrapalham medições */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3) Base tipográfica suave e consistente */
+html,
+body {
+    height: 100%;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4) Mídias nunca estouram containers e respeitam proporção */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+img,
+video {
+    height: auto;
+}
+
+/* 5) Tabelas básicas previsíveis */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* 6) Listas sem marcadores e sem recuo (você estiliza quando quiser) */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 7) Links previsíveis: sem herdar decoração indesejada,
+      mas com foco/hover visíveis por acessibilidade */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+}
+
+/* 8) Formulários: herdando tipografia.
+      NÃO removemos borda/fundo/outline globalmente (acessibilidade!) */
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+/* 9) Botões: cursor padrão de ação e remoção de estilos nativos só se você quiser */
+button {
+    cursor: pointer;
+}
+
+
+
+/* 10) Foco visível consistente (sem apagar outline global) */
+:focus-visible {
+    outline: 2px solid #8ab4f8;
+    /* ajuste a cor conforme seu tema */
+    outline-offset: 2px;
+}
+
+/* 11) Campos desabilitados/readonly não deveriam mostrar "cursor de ação" */
+:disabled {
+    cursor: not-allowed;
+}
+
+/* 12) HR neutro */
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .12);
+    margin-block: 1rem;
+}
+
+/* 13) Preferência do usuário: reduz animações/transições em quem tem motion-reduce */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
