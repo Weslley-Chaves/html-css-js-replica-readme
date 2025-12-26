@@ -27,13 +27,13 @@ html-css-js-replica-readme/
 ## 🔗 Links
 
 - [📌 Clique aqui para visualizar o projeto publicado no GitHub Pages](https://weslley-chaves.github.io/html-css-js-replica-readme/)
-- [📌 Clique aqui para visualizar o meu repositório README.md para comparação](https://github.com/Weslley-Chaves)
+- [📌 Clique aqui para visualizar o meu repositório README.md para comparação](https://github.com/Weslley-Chaves) (DESATUALIZADO)
 
 ---
 
 <p align="left">
   <strong>📸 Abaixo, preview do meu repositório README.md:</strong><br><br>
-  <img src="imagens/github.com_Weslley-Chaves_Weslley-Chaves.png" alt="Preview do meu repositório README.md" width="600">
+  <img src="assets/github.com_Weslley-Chaves_Weslley-Chaves.png" alt="Preview do meu repositório README.md" width="600">
 </p>
 
 
